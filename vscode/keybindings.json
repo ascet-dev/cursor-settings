@@ -1,0 +1,36 @@
+[
+    // Только специфичные для PyCharm клавиши на MacOS
+    {
+        "key": "cmd+click",
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "cmd+b",
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "cmd+shift+b",
+        "command": "editor.action.goToImplementation"
+    },
+    {
+        "key": "cmd+shift+r",
+        "command": "editor.action.rename"
+    },
+    {
+        "key": "cmd+alt+shift+l",
+        "command": "editor.action.formatDocument"
+    },
+    
+    // Запуск через Make (как в PyCharm)
+    {
+        "key": "shift+f10",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "make run\n"
+        }
+    },
+    {
+        "key": "shift+f9",
+        "command": "python.debugPythonFile"
+    }
+] 

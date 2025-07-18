@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "rokoroku.vscode-theme-darcula",
+        "GitHub.github-vscode-theme",
+        "usernamehw.errorlens"
+    ]
+} 

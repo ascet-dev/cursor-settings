@@ -1,0 +1,394 @@
+{
+    // Цветовая схема - имитируем PyCharm Darcula
+    "workbench.colorTheme": "Darcula",
+    "workbench.preferredDarkColorTheme": "Darcula",
+    
+    // Шрифт и размер - как в PyCharm
+    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 1.2,
+    
+    // Отступы и табуляция
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    
+    // Показывать номера строк
+    "editor.lineNumbers": "on",
+    
+    // Показывать пробелы и табуляции
+    "editor.renderWhitespace": "boundary",
+    
+    // Автоматическое сохранение
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    
+    // Python настройки - только работающие расширения
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "black",
+    "python.sortImports.args": ["--profile", "black"],
+    
+    // Автодополнение и IntelliSense
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.diagnosticMode": "workspace",
+    
+    // Скрытие системных файлов и папок
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/*.pyo": true,
+        "**/*.pyd": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "**/.ruff_cache": true,
+        "**/*.egg-info": true,
+        "**/.coverage": true,
+        "**/htmlcov": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.env": true,
+        "**/.env.local": true,
+        "**/.env.*.local": true
+    },
+    "search.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "**/.ruff_cache": true,
+        "**/*.egg-info": true,
+        "**/.coverage": true,
+        "**/htmlcov": true,
+        "**/.venv": true,
+        "**/node_modules": true
+    },
+    
+    // Панели и интерфейс - как в PyCharm
+    "explorer.openEditors.visible": 0,
+    "workbench.sideBar.location": "left",
+    "workbench.panel.defaultLocation": "bottom",
+    "workbench.statusBar.visible": true,
+    
+    // Breadcrumbs (навигация по файлам) - как в PyCharm
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.filePath": "on",
+    "breadcrumbs.symbolPath": "on",
+    
+    // Мини-карта кода
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 120,
+    
+    // Подсветка текущей строки
+    "editor.renderLineHighlight": "line",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    
+    // Дополнительные настройки - как в PyCharm
+    "editor.wordWrap": "off",
+    "editor.rulers": [88, 120],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.suggestSelection": "first",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "on",
+    
+    // Автодополнение
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.parameterHints.enabled": true,
+    "editor.hover.enabled": true,
+    
+    // Git настройки
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    
+    // Отображение проблем в файлах
+    "problems.decorations.enabled": true,
+    "problems.showCurrentInStatus": true,
+    "problems.showErrors": true,
+    "problems.showWarnings": true,
+    "problems.showInfo": true,
+    "problems.visibility": "always",
+    "problems.panel.revealOn": "always",
+    
+    // Git настройки для цветов
+    "git.decorations.enabled": true,
+    "scm.diffDecorations": "all",
+    "scm.diffDecorationsGutterVisibility": "always",
+    
+    // ErrorLens настройки
+    "errorLens.enabled": true,
+    "errorLens.messageEnabled": true,
+    "errorLens.statusBarMessageEnabled": true,
+    "errorLens.statusBarColorsEnabled": true,
+    "errorLens.gutterIconsEnabled": true,
+    "errorLens.scrollbarHackEnabled": true,
+    
+    // Терминал
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 13,
+    
+    // Цвета интерфейса - как в PyCharm Darcula
+    "workbench.colorCustomizations": {
+        "editor.background": "#1e1f22",
+        "editor.foreground": "#A9B7C6",
+        "editor.lineHighlightBackground": "#323232",
+        "editor.selectionBackground": "#214283",
+        "editor.inactiveSelectionBackground": "#3a3a3a83",
+        "editorCursor.foreground": "#BBBBBB",
+        "editorWhitespace.foreground": "#3A3A3A",
+        "sideBar.background": "#2b2d30",
+        "sideBar.foreground": "#dddfe3",
+        "sideBarTitle.foreground": "#A9B7C6",
+        "activityBar.background": "#3C3F41",
+        "activityBar.foreground": "#A9B7C6",
+        "statusBar.background": "#3C3F41",
+        "statusBar.foreground": "#A9B7C6",
+        "tab.activeBackground": "#2B2B2B",
+        "tab.inactiveBackground": "#3C3F41",
+        "tab.activeForeground": "#A9B7C6",
+        "tab.inactiveForeground": "#787878",
+        "panel.background": "#3C3F41",
+        "panel.foreground": "#A9B7C6",
+        "terminal.background": "#2B2B2B",
+        "terminal.foreground": "#A9B7C6",
+        
+        // Цвета файлов в боковой панели - как в PyCharm
+        "list.activeSelectionBackground": "#214283",
+        "list.activeSelectionForeground": "#A9B7C6",
+        "list.inactiveSelectionBackground": "#3A3A3A",
+        "list.inactiveSelectionForeground": "#A9B7C6",
+        "list.hoverBackground": "#323232",
+        "list.hoverForeground": "#A9B7C6",
+        "list.focusForeground": "#dddfe3",
+        "list.focusBackground": "#323232",
+        "list.focusOutline": "#214283",
+        "tree.indentGuidesStroke": "#3A3A3A",
+        "tree.tableColumnsBorder": "#3A3A3A",
+        
+        // Git цвета файлов - как в PyCharm
+        "gitDecoration.modifiedForeground": "#5983ba",
+        "gitDecoration.addedForeground": "#73bd7a",
+        "gitDecoration.deletedForeground": "#e98f89",
+        "gitDecoration.untrackedForeground": "#e98f89",
+        "gitDecoration.ignoredForeground": "#d69b6b",
+        "gitDecoration.conflictingForeground": "#e98f89",
+        "gitDecoration.submoduleForeground": "#A9B7C6",
+        "gitDecoration.modifiedResourceForeground": "#5983ba",
+        "gitDecoration.addedResourceForeground": "#73bd7a",
+        "gitDecoration.deletedResourceForeground": "#e98f89",
+        "gitDecoration.untrackedResourceForeground": "#e98f89",
+        "gitDecoration.ignoredResourceForeground": "#d69b6b",
+        "gitDecoration.conflictingResourceForeground": "#e98f89",
+        
+        // Проблемы и ошибки
+        "problemsErrorIcon.foreground": "#e98f89",
+        "problemsWarningIcon.foreground": "#d69b6b",
+        "problemsInfoIcon.foreground": "#5983ba",
+        
+
+    },
+    
+    // Цвета синтаксиса - как в PyCharm Darcula
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": ["keyword.control", "keyword.operator"],
+                "settings": {
+                    "foreground": "#ce8e6d"
+                }
+            },
+            {
+                "scope": ["keyword.control.import", "keyword.control.import.from"],
+                "settings": {
+                    "foreground": "#ce8e6d"
+                }
+            },
+            {
+                "scope": ["keyword.control.flow", "storage.type.function"],
+                "settings": {
+                    "foreground": "#ce8e6d"
+                }
+            },
+            {
+                "scope": ["storage.type.class"],
+                "settings": {
+                    "foreground": "#ce8e6d"
+                }
+            },
+            {
+                "scope": ["keyword.control.import", "keyword.control.import.from", "keyword.control.import.as"],
+                "settings": {
+                    "foreground": "#ce8e6d"
+                }
+            },
+            {
+                "scope": ["storage.type.function", "storage.type.function.async"],
+                "settings": {
+                    "foreground": "#ce8e6d"
+                }
+            },
+            {
+                "scope": ["string", "string.quoted"],
+                "settings": {
+                    "foreground": "#6A8759"
+                }
+            },
+            {
+                "scope": ["comment", "comment.line", "comment.block"],
+                "settings": {
+                    "foreground": "#808080",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": ["entity.name.function", "support.function"],
+                "settings": {
+                    "foreground": "#57a8f5"
+                }
+            },
+            {
+                "scope": ["variable.parameter"],
+                "settings": {
+                    "foreground": "#A9B7C6"
+                }
+            },
+            {
+                "scope": ["variable.parameter.self"],
+                "settings": {
+                    "foreground": "#94558d"
+                }
+            },
+            {
+                "scope": ["variable.other"],
+                "settings": {
+                    "foreground": "#bcbec4"
+                }
+            },
+            {
+                "scope": ["constant.numeric"],
+                "settings": {
+                    "foreground": "#6897BB"
+                }
+            },
+            {
+                "scope": ["constant.language"],
+                "settings": {
+                    "foreground": "#CC7832"
+                }
+            },
+            {
+                "scope": ["entity.name.class", "support.class"],
+                "settings": {
+                    "foreground": "#A9B7C6"
+                }
+            },
+            {
+                "scope": ["variable.other"],
+                "settings": {
+                    "foreground": "#bcbec4"
+                }
+            },
+            {
+                "scope": ["storage.type"],
+                "settings": {
+                    "foreground": "#CC7832"
+                }
+            },
+            {
+                "scope": ["entity.other.attribute-name"],
+                "settings": {
+                    "foreground": "#ff6b6b"
+                }
+            },
+
+            {
+                "scope": ["support.type.python"],
+                "settings": {
+                    "foreground": "#A9B7C6"
+                }
+            },
+            {
+                "scope": ["punctuation.definition.parameters"],
+                "settings": {
+                    "foreground": "#A9B7C6"
+                }
+            },
+            {
+                "scope": ["punctuation.separator.parameters"],
+                "settings": {
+                    "foreground": "#A9B7C6"
+                }
+            },
+            {
+                "scope": ["punctuation.definition.arguments"],
+                "settings": {
+                    "foreground": "#A9B7C6"
+                }
+            },
+            {
+                "scope": ["punctuation.separator.arguments"],
+                "settings": {
+                    "foreground": "#A9B7C6"
+                }
+            },
+            {
+                "scope": ["meta.function-call.generic"],
+                "settings": {
+                    "foreground": "#A9B7C6"
+                }
+            },
+            {
+                "scope": ["meta.function-call.arguments"],
+                "settings": {
+                    "foreground": "#A9B7C6"
+                }
+            },
+            {
+                "scope": ["meta.function-call.arguments keyword.argument"],
+                "settings": {
+                    "foreground": "#aa4926"
+                }
+            },
+            {
+                "scope": ["meta.function-call.arguments variable.parameter"],
+                "settings": {
+                    "foreground": "#aa4926"
+                }
+            },
+
+
+            {
+                "scope": ["meta.function-call.arguments string"],
+                "settings": {
+                    "foreground": "#6A8759"
+                }
+            },
+            {
+                "scope": ["meta.function-call.arguments punctuation.definition.string"],
+                "settings": {
+                    "foreground": "#6A8759"
+                }
+            },
+            {
+                "scope": ["variable.parameter.self", "variable.language.special.self", "variable.other.self"],
+                "settings": {
+                    "foreground": "#94558d"
+                }
+            },
+
+        ]
+    }
+}
