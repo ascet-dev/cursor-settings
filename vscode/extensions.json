@@ -5,6 +5,8 @@
         "ms-python.isort",
         "rokoroku.vscode-theme-darcula",
         "GitHub.github-vscode-theme",
-        "usernamehw.errorlens"
+        "usernamehw.errorlens",
+        "carlos-algms.makefile-task-runner",
+        "carlwr.better-makefile"
     ]
 } 
