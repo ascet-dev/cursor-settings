@@ -53,9 +53,6 @@
         "**/htmlcov": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "**/.env": true,
-        "**/.env.local": true,
-        "**/.env.*.local": true
     },
     "search.exclude": {
         "**/__pycache__": true,
