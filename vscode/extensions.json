@@ -1,12 +1,12 @@
 {
     "recommendations": [
         "ms-python.python",
-        "ms-python.black-formatter",
-        "ms-python.isort",
         "rokoroku.vscode-theme-darcula",
-        "GitHub.github-vscode-theme",
-        "usernamehw.errorlens",
         "carlos-algms.makefile-task-runner",
-        "carlwr.better-makefile"
+        "k--kato.intellij-idea-keybindings",
+        "pkief.material-icon-theme",
+        "anysphere.cursorpyright",
+        "charliermarsh.ruff",
+        "redhat.vscode-yaml"
     ]
 } 

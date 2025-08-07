@@ -1,45 +1,103 @@
 {
-    // Цветовая схема - имитируем PyCharm Darcula
-    "workbench.colorTheme": "Darcula",
     "workbench.preferredDarkColorTheme": "Darcula",
-    
-    // Шрифт и размер - как в PyCharm
-    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "left",
+    "workbench.panel.defaultLocation": "bottom",
+    "workbench.statusBar.visible": true,
+    "explorer.openEditors.visible": 0,
+
+    // Горячие клавиши (должно работать после установки расширения)
+    "keyboard.dispatch": "keyCode",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+    // Шрифт и редактор
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
     "editor.lineHeight": 1.2,
-    
-    // Отступы и табуляция
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "boundary",
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
-    
-    // Показывать номера строк
     "editor.lineNumbers": "on",
-    
-    // Показывать пробелы и табуляции
-    "editor.renderWhitespace": "boundary",
-    
-    // Автоматическое сохранение
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
-    
-    // Python настройки - только работающие расширения
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 120,
+    "editor.renderLineHighlight": "line",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.rulers": [88, 120],
+    "editor.wordWrap": "off",
+
+    // Навигация
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.filePath": "on",
+    "breadcrumbs.symbolPath": "on",
+
+    // Автодополнение
+    "editor.suggestSelection": "first",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.parameterHints.enabled": true,
+    "editor.hover.enabled": true,
+    "editor.quickSuggestionsDelay": 10,
+
+    // Python-анализ (Pylance вместо cursorpyright)
+    "python.languageServer": "Pylance",
     "python.defaultInterpreterPath": "./.venv/bin/python",
     "python.terminal.activateEnvironment": true,
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.mypyEnabled": true,
-    "python.formatting.provider": "black",
-    "python.sortImports.args": ["--profile", "black"],
-    
-    // Автодополнение и IntelliSense
-    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.typeCheckingMode": "strict",
     "python.analysis.autoImportCompletions": true,
     "python.analysis.autoSearchPaths": true,
-    "python.analysis.diagnosticMode": "workspace",
-    
-    // Скрытие системных файлов и папок
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.indexing": true,
+    "python.analysis.reportUndefinedVariable": "error",
+    "python.analysis.reportUnboundVariable": "error",
+
+    // Линтинг и форматирование (Ruff вместо flake8)
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.linting.ruffEnabled": true,
+    "ruff.path": ["${workspaceFolder}/.venv/bin/ruff"],
+    "ruff.args": ["--fix"],
+    "python.formatting.provider": "ruff",
+    "python.sortImports.args": ["--profile", "black"],
+    "editor.formatOnSave": true,
+
+    // Тестирование
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": ["-v", "--no-cov"],
+
+    // Git (GitLens)
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.decorations.enabled": true,
+    "scm.diffDecorations": "all",
+    "scm.diffDecorationsGutterVisibility": "always",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+
+    // Терминал
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 13,
+
+    // Скрытие файлов
     "files.exclude": {
         "**/__pycache__": true,
         "**/*.pyc": true,
@@ -53,6 +111,8 @@
         "**/htmlcov": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
+        "**/.git": true,
+        "**/.venv": true
     },
     "search.exclude": {
         "**/__pycache__": true,
@@ -66,78 +126,8 @@
         "**/.venv": true,
         "**/node_modules": true
     },
-    
-    // Панели и интерфейс - как в PyCharm
-    "explorer.openEditors.visible": 0,
-    "workbench.sideBar.location": "left",
-    "workbench.panel.defaultLocation": "bottom",
-    "workbench.statusBar.visible": true,
-    
-    // Breadcrumbs (навигация по файлам) - как в PyCharm
-    "breadcrumbs.enabled": true,
-    "breadcrumbs.filePath": "on",
-    "breadcrumbs.symbolPath": "on",
-    
-    // Мини-карта кода
-    "editor.minimap.enabled": true,
-    "editor.minimap.maxColumn": 120,
-    
-    // Подсветка текущей строки
-    "editor.renderLineHighlight": "line",
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": "on",
-    
-    // Дополнительные настройки - как в PyCharm
-    "editor.wordWrap": "off",
-    "editor.rulers": [88, 120],
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": true,
-    "editor.suggestSelection": "first",
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": "on",
-    
-    // Автодополнение
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": true
-    },
-    "editor.parameterHints.enabled": true,
-    "editor.hover.enabled": true,
-    
-    // Git настройки
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    
-    // Отображение проблем в файлах
-    "problems.decorations.enabled": true,
-    "problems.showCurrentInStatus": true,
-    "problems.showErrors": true,
-    "problems.showWarnings": true,
-    "problems.showInfo": true,
-    "problems.visibility": "always",
-    "problems.panel.revealOn": "always",
-    
-    // Git настройки для цветов
-    "git.decorations.enabled": true,
-    "scm.diffDecorations": "all",
-    "scm.diffDecorationsGutterVisibility": "always",
-    
-    // ErrorLens настройки
-    "errorLens.enabled": true,
-    "errorLens.messageEnabled": true,
-    "errorLens.statusBarMessageEnabled": true,
-    "errorLens.statusBarColorsEnabled": true,
-    "errorLens.gutterIconsEnabled": true,
-    "errorLens.scrollbarHackEnabled": true,
-    
-    // Терминал
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontSize": 13,
-    
-    // Цвета интерфейса - как в PyCharm Darcula
+
+    // Цвета интерфейса (PyCharm Darcula)
     "workbench.colorCustomizations": {
         "editor.background": "#1e1f22",
         "editor.foreground": "#A9B7C6",
@@ -195,10 +185,13 @@
         "problemsWarningIcon.foreground": "#d69b6b",
         "problemsInfoIcon.foreground": "#5983ba",
         
-
+        // Добавьте это для точности:
+        "editorBracketHighlight.foreground1": "#FFD700",
+        "editorBracketHighlight.foreground2": "#DA70D6",
+        "editorBracketHighlight.foreground3": "#87CEEB"
     },
-    
-    // Цвета синтаксиса - как в PyCharm Darcula
+
+    // Синтаксис Python (дополнения)
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -385,7 +378,19 @@
                     "foreground": "#94558d"
                 }
             },
-
+            {
+                "scope": "entity.name.function.decorator",
+                "settings": { "foreground": "#CC7832" }
+            },
+            {
+                "scope": "storage.type.annotation.python",
+                "settings": { "foreground": "#6A8759" }
+            },
+            {
+                "scope": "support.type.python",
+                "settings": { "foreground": "#A9B7C6" }
+            }
         ]
-    }
+    },
+    "workbench.colorTheme": "Darcula"
 }
