@@ -1,5 +1,6 @@
 {
     "files.autoSave": "onFocusChange",
+    "files.autoSaveWorkspaceFilesOnly": false,
     "workbench.preferredDarkColorTheme": "Darcula",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "left",
@@ -20,7 +21,7 @@
     "editor.fontSize": 13,
     "editor.lineHeight": 1.2,
     "editor.fontLigatures": true,
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "none",
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
