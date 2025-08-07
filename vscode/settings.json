@@ -1,398 +1,132 @@
 {
-    "files.autoSave": "onFocusChange",
-    "files.autoSaveWorkspaceFilesOnly": false,
-    "workbench.preferredDarkColorTheme": "Darcula",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "left",
-    "workbench.panel.defaultLocation": "bottom",
-    "workbench.statusBar.visible": true,
-    "explorer.openEditors.visible": 0,
+    "python.languageServer": "None",
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveWorkspaceFilesOnly": false,
+  "workbench.preferredDarkColorTheme": "Darcula",
+  "workbench.sideBar.location": "left",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.statusBar.visible": true,
+  "explorer.openEditors.visible": 0,
 
-    // Горячие клавиши (должно работать после установки расширения)
-    "keyboard.dispatch": "keyCode",
-    "[python]": {
-        "editor.formatOnType": true,
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "charliermarsh.ruff"
-    },
-
-    // Шрифт и редактор
-    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "editor.fontSize": 13,
-    "editor.lineHeight": 1.2,
-    "editor.fontLigatures": true,
-    "editor.renderWhitespace": "none",
-    "editor.tabSize": 4,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false,
-    "editor.lineNumbers": "on",
-    "editor.minimap.enabled": true,
-    "editor.minimap.maxColumn": 120,
-    "editor.renderLineHighlight": "line",
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": true,
-    "editor.rulers": [88, 120],
-    "editor.wordWrap": "off",
-
-    // Навигация
-    "breadcrumbs.enabled": true,
-    "breadcrumbs.filePath": "on",
-    "breadcrumbs.symbolPath": "on",
-
-    // Автодополнение
-    "editor.suggestSelection": "first",
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": "on",
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": true
-    },
-    "editor.parameterHints.enabled": true,
-    "editor.hover.enabled": true,
-    "editor.quickSuggestionsDelay": 10,
-
-    // Python-анализ (Pylance вместо cursorpyright)
-    "python.languageServer": "Pylance",
-    "python.defaultInterpreterPath": "./.venv/bin/python",
-    "python.terminal.activateEnvironment": true,
-    "python.analysis.typeCheckingMode": "strict",
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.autoSearchPaths": true,
-    "python.analysis.useLibraryCodeForTypes": true,
-    "python.analysis.completeFunctionParens": true,
-    "python.analysis.indexing": true,
-    "python.analysis.reportUndefinedVariable": "error",
-    "python.analysis.reportUnboundVariable": "error",
-
-    // Линтинг и форматирование (Ruff вместо flake8)
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": false,
-    "python.linting.mypyEnabled": true,
-    "python.linting.ruffEnabled": true,
-    "ruff.path": ["${workspaceFolder}/.venv/bin/ruff"],
-    "ruff.args": ["--fix"],
-    "python.formatting.provider": "ruff",
-    "python.sortImports.args": ["--profile", "black"],
+  // Горячие клавиши (должно работать после установки расширения)
+  "keyboard.dispatch": "keyCode",
+  "[python]": {
+    "editor.formatOnType": true,
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
 
-    // Тестирование
-    "python.testing.pytestEnabled": true,
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestArgs": ["-v", "--no-cov"],
+  // Шрифт и редактор
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.2,
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "none",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": true,
+  "editor.minimap.maxColumn": 120,
+  "editor.renderLineHighlight": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.rulers": [88, 120],
+  "editor.wordWrap": "off",
 
-    // Git (GitLens)
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "git.decorations.enabled": true,
-    "scm.diffDecorations": "all",
-    "scm.diffDecorationsGutterVisibility": "always",
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.codeLens.enabled": false,
+  // Навигация
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.symbolPath": "on",
 
-    // Терминал
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontSize": 13,
+  // Автодополнение
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.parameterHints.enabled": true,
+  "editor.hover.enabled": true,
+  "editor.quickSuggestionsDelay": 10,
 
-    // Скрытие файлов
-    "files.exclude": {
-        "**/__pycache__": true,
-        "**/*.pyc": true,
-        "**/*.pyo": true,
-        "**/*.pyd": true,
-        "**/.pytest_cache": true,
-        "**/.mypy_cache": true,
-        "**/.ruff_cache": true,
-        "**/*.egg-info": true,
-        "**/.coverage": true,
-        "**/htmlcov": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "**/.git": true,
-        "**/.venv": true
-    },
-    "search.exclude": {
-        "**/__pycache__": true,
-        "**/*.pyc": true,
-        "**/.pytest_cache": true,
-        "**/.mypy_cache": true,
-        "**/.ruff_cache": true,
-        "**/*.egg-info": true,
-        "**/.coverage": true,
-        "**/htmlcov": true,
-        "**/.venv": true,
-        "**/node_modules": true
-    },
+  // Python-анализ (Pylance вместо cursorpyright)
+  "python.defaultInterpreterPath": "./.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.indexing": true,
+  "python.analysis.reportUndefinedVariable": "error",
+  "python.analysis.reportUnboundVariable": "error",
 
-    // Цвета интерфейса (PyCharm Darcula)
-    "workbench.colorCustomizations": {
-        "editor.background": "#1e1f22",
-        "editor.foreground": "#A9B7C6",
-        "editor.lineHighlightBackground": "#323232",
-        "editor.selectionBackground": "#214283",
-        "editor.inactiveSelectionBackground": "#3a3a3a83",
-        "editorCursor.foreground": "#BBBBBB",
-        "editorWhitespace.foreground": "#3A3A3A",
-        "sideBar.background": "#2b2d30",
-        "sideBar.foreground": "#dddfe3",
-        "sideBarTitle.foreground": "#A9B7C6",
-        "activityBar.background": "#3C3F41",
-        "activityBar.foreground": "#A9B7C6",
-        "statusBar.background": "#3C3F41",
-        "statusBar.foreground": "#A9B7C6",
-        "tab.activeBackground": "#2B2B2B",
-        "tab.inactiveBackground": "#3C3F41",
-        "tab.activeForeground": "#A9B7C6",
-        "tab.inactiveForeground": "#787878",
-        "panel.background": "#3C3F41",
-        "panel.foreground": "#A9B7C6",
-        "terminal.background": "#2B2B2B",
-        "terminal.foreground": "#A9B7C6",
-        
-        // Цвета файлов в боковой панели - как в PyCharm
-        "list.activeSelectionBackground": "#214283",
-        "list.activeSelectionForeground": "#A9B7C6",
-        "list.inactiveSelectionBackground": "#3A3A3A",
-        "list.inactiveSelectionForeground": "#A9B7C6",
-        "list.hoverBackground": "#323232",
-        "list.hoverForeground": "#A9B7C6",
-        "list.focusForeground": "#dddfe3",
-        "list.focusBackground": "#323232",
-        "list.focusOutline": "#214283",
-        "tree.indentGuidesStroke": "#3A3A3A",
-        "tree.tableColumnsBorder": "#3A3A3A",
-        
-        // Git цвета файлов - как в PyCharm
-        "gitDecoration.modifiedForeground": "#5983ba",
-        "gitDecoration.addedForeground": "#73bd7a",
-        "gitDecoration.deletedForeground": "#e98f89",
-        "gitDecoration.untrackedForeground": "#e98f89",
-        "gitDecoration.ignoredForeground": "#d69b6b",
-        "gitDecoration.conflictingForeground": "#e98f89",
-        "gitDecoration.submoduleForeground": "#A9B7C6",
-        "gitDecoration.modifiedResourceForeground": "#5983ba",
-        "gitDecoration.addedResourceForeground": "#73bd7a",
-        "gitDecoration.deletedResourceForeground": "#e98f89",
-        "gitDecoration.untrackedResourceForeground": "#e98f89",
-        "gitDecoration.ignoredResourceForeground": "#d69b6b",
-        "gitDecoration.conflictingResourceForeground": "#e98f89",
-        
-        // Проблемы и ошибки
-        "problemsErrorIcon.foreground": "#e98f89",
-        "problemsWarningIcon.foreground": "#d69b6b",
-        "problemsInfoIcon.foreground": "#5983ba",
-        
-        // Добавьте это для точности:
-        "editorBracketHighlight.foreground1": "#FFD700",
-        "editorBracketHighlight.foreground2": "#DA70D6",
-        "editorBracketHighlight.foreground3": "#87CEEB"
-    },
+  // Линтинг и форматирование (Ruff вместо flake8)
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": false,
+  "python.linting.mypyEnabled": true,
+  "python.linting.ruffEnabled": true,
+  "ruff.path": ["${workspaceFolder}/.venv/bin/ruff"],
+  "ruff.args": ["--fix"],
+  "python.formatting.provider": "ruff",
+  "python.sortImports.args": ["--profile", "black"],
+  "editor.formatOnSave": true,
 
-    // Синтаксис Python (дополнения)
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": ["keyword.control", "keyword.operator"],
-                "settings": {
-                    "foreground": "#ce8e6d"
-                }
-            },
-            {
-                "scope": ["keyword.control.import", "keyword.control.import.from"],
-                "settings": {
-                    "foreground": "#ce8e6d"
-                }
-            },
-            {
-                "scope": ["keyword.control.flow", "storage.type.function"],
-                "settings": {
-                    "foreground": "#ce8e6d"
-                }
-            },
-            {
-                "scope": ["storage.type.class"],
-                "settings": {
-                    "foreground": "#ce8e6d"
-                }
-            },
-            {
-                "scope": ["keyword.control.import", "keyword.control.import.from", "keyword.control.import.as"],
-                "settings": {
-                    "foreground": "#ce8e6d"
-                }
-            },
-            {
-                "scope": ["storage.type.function", "storage.type.function.async"],
-                "settings": {
-                    "foreground": "#ce8e6d"
-                }
-            },
-            {
-                "scope": ["string", "string.quoted"],
-                "settings": {
-                    "foreground": "#6A8759"
-                }
-            },
-            {
-                "scope": ["comment", "comment.line", "comment.block"],
-                "settings": {
-                    "foreground": "#808080",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": ["entity.name.function", "support.function"],
-                "settings": {
-                    "foreground": "#57a8f5"
-                }
-            },
-            {
-                "scope": ["variable.parameter"],
-                "settings": {
-                    "foreground": "#A9B7C6"
-                }
-            },
-            {
-                "scope": ["variable.parameter.self"],
-                "settings": {
-                    "foreground": "#94558d"
-                }
-            },
-            {
-                "scope": ["variable.other"],
-                "settings": {
-                    "foreground": "#bcbec4"
-                }
-            },
-            {
-                "scope": ["constant.numeric"],
-                "settings": {
-                    "foreground": "#6897BB"
-                }
-            },
-            {
-                "scope": ["constant.language"],
-                "settings": {
-                    "foreground": "#CC7832"
-                }
-            },
-            {
-                "scope": ["entity.name.class", "support.class"],
-                "settings": {
-                    "foreground": "#A9B7C6"
-                }
-            },
-            {
-                "scope": ["variable.other"],
-                "settings": {
-                    "foreground": "#bcbec4"
-                }
-            },
-            {
-                "scope": ["storage.type"],
-                "settings": {
-                    "foreground": "#CC7832"
-                }
-            },
-            {
-                "scope": ["entity.other.attribute-name"],
-                "settings": {
-                    "foreground": "#ff6b6b"
-                }
-            },
+  // Тестирование
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["-v", "--no-cov"],
 
-            {
-                "scope": ["support.type.python"],
-                "settings": {
-                    "foreground": "#A9B7C6"
-                }
-            },
-            {
-                "scope": ["punctuation.definition.parameters"],
-                "settings": {
-                    "foreground": "#A9B7C6"
-                }
-            },
-            {
-                "scope": ["punctuation.separator.parameters"],
-                "settings": {
-                    "foreground": "#A9B7C6"
-                }
-            },
-            {
-                "scope": ["punctuation.definition.arguments"],
-                "settings": {
-                    "foreground": "#A9B7C6"
-                }
-            },
-            {
-                "scope": ["punctuation.separator.arguments"],
-                "settings": {
-                    "foreground": "#A9B7C6"
-                }
-            },
-            {
-                "scope": ["meta.function-call.generic"],
-                "settings": {
-                    "foreground": "#A9B7C6"
-                }
-            },
-            {
-                "scope": ["meta.function-call.arguments"],
-                "settings": {
-                    "foreground": "#A9B7C6"
-                }
-            },
-            {
-                "scope": ["meta.function-call.arguments keyword.argument"],
-                "settings": {
-                    "foreground": "#aa4926"
-                }
-            },
-            {
-                "scope": ["meta.function-call.arguments variable.parameter"],
-                "settings": {
-                    "foreground": "#aa4926"
-                }
-            },
+  // Git (GitLens)
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.decorations.enabled": true,
+  "scm.diffDecorations": "all",
+  "scm.diffDecorationsGutterVisibility": "always",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
 
+  // Терминал
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 13,
 
-            {
-                "scope": ["meta.function-call.arguments string"],
-                "settings": {
-                    "foreground": "#6A8759"
-                }
-            },
-            {
-                "scope": ["meta.function-call.arguments punctuation.definition.string"],
-                "settings": {
-                    "foreground": "#6A8759"
-                }
-            },
-            {
-                "scope": ["variable.parameter.self", "variable.language.special.self", "variable.other.self"],
-                "settings": {
-                    "foreground": "#94558d"
-                }
-            },
-            {
-                "scope": "entity.name.function.decorator",
-                "settings": { "foreground": "#CC7832" }
-            },
-            {
-                "scope": "storage.type.annotation.python",
-                "settings": { "foreground": "#6A8759" }
-            },
-            {
-                "scope": "support.type.python",
-                "settings": { "foreground": "#A9B7C6" }
-            }
-        ]
-    },
-    "workbench.colorTheme": "Darcula"
+  // Скрытие файлов
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/*.pyo": true,
+    "**/*.pyd": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/.ruff_cache": true,
+    "**/*.egg-info": true,
+    "**/.coverage": true,
+    "**/htmlcov": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.git": true,
+    "**/.venv": true
+  },
+  "search.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/.ruff_cache": true,
+    "**/*.egg-info": true,
+    "**/.coverage": true,
+    "**/htmlcov": true,
+    "**/.venv": true,
+    "**/node_modules": true
+  },
+"workbench.colorTheme": "IntelliJ IDEA New UI Dark",
+"workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark"
 }

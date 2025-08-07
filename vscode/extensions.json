@@ -7,6 +7,7 @@
         "compassak.intellij-idea-new-ui",
         "anysphere.cursorpyright",
         "charliermarsh.ruff",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "ardonplay.vscode-jetbrains-icon-theme",
     ]
 } 
